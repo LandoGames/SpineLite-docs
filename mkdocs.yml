@@ -1,0 +1,60 @@
+site_name: SpineLite Documentation
+site_description: Unity character customization for Spine models
+site_url: https://landogames.github.io/SpineLite-docs/
+repo_url: https://github.com/LandoGames/Spines
+repo_name: LandoGames/Spines
+
+theme:
+  name: material
+  palette:
+    - scheme: slate
+      primary: blue
+      accent: cyan
+      toggle:
+        icon: material/brightness-4
+        name: Switch to light mode
+    - scheme: default
+      primary: blue
+      accent: cyan
+      toggle:
+        icon: material/brightness-7
+        name: Switch to dark mode
+  features:
+    - navigation.instant
+    - navigation.tracking
+    - navigation.sections
+    - navigation.expand
+    - content.code.copy
+    - content.code.annotate
+  icon:
+    repo: fontawesome/brands/github
+
+markdown_extensions:
+  - pymdownx.highlight:
+      anchor_linenums: true
+  - pymdownx.superfences
+  - pymdownx.tabbed:
+      alternate_style: true
+  - admonition
+  - pymdownx.details
+  - attr_list
+  - md_in_html
+  - tables
+
+nav:
+  - Home: index.md
+  - Getting Started: getting-started.md
+  - Components:
+    - SpineLiteController: api/controller.md
+    - SpineLiteButton: api/button.md
+  - Features:
+    - Equipment System: features/equipment.md
+    - Color Tinting: features/colors.md
+    - Save & Load: features/save-load.md
+    - Animations: features/animations.md
+  - Examples: examples.md
+
+extra:
+  social:
+    - icon: fontawesome/brands/github
+      link: https://github.com/LandoGames
